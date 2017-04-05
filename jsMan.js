@@ -6,20 +6,17 @@
 
 var jsMan = {};
 (function(){
-	let that = this;
-	let docLoaded = false;
+	let that = this;	
 	let xhr = undefined;
 	
-	// Document loaded handler must be passed as docLoad function.	
+	// Document loaded handler must be passed as domLoad function.	
 	if (document.addEventListener) { 
-		document.addEventListener('DOMContentLoaded', docLoad, false);
-		docLoaded = true;
+		document.addEventListener('DOMContentLoaded', domLoad, false);
 	} else if (document.attachEvent) {
 		document.attachEvent("onreadystatechange", function(){
           if ( document.readyState === "complete" ) {
               document.detachEvent( "onreadystatechange", arguments.callee );              
-			  docLoad();
-			  docLoaded = true;
+			  domLoad();
 			}
 		});
 	}
@@ -59,4 +56,4 @@ var jsMan = {};
 	this.getElement = function(isID, name) {
 		return isID ? document.getElementById(name) : document.getElementsByClassName(name)[0];
 	};
-}).apply(jsMan, docLoad);
+}).apply(jsMan, domLoad);
