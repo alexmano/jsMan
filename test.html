@@ -1,0 +1,17 @@
+<html>
+<body>
+<div id="a" class="b">jsMan test ID.<span class="abc">jsMan test class.</span></div>
+
+<script>
+	var docLoad = function() {
+		console.log('jsMan DOMContentLoaded event raised');
+	};	
+</script>
+
+<script src="jsMan.js"></script>
+<script>
+	console.log(jsMan.getElement(true, 'a'));
+	console.log(jsMan.getElement(false, 'b'));
+</script>
+</body>
+</html>
