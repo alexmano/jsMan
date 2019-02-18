@@ -34,7 +34,7 @@ Recommendation is to include the jsMan.min.js script before the end of the <body
     
     Asynchronous HTTP POST method signature:
     ```javascript
-     jsMan.asyncPost(string url, array data, function callback);
+     jsMan.asyncPost(string url, Array data, function callback);
     ```
     ***************************************************
     **Author: Alex Manolescu**
