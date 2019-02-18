@@ -15,7 +15,7 @@ Recommendation is to include the jsMan.min.js script before the end of the <body
     
     Method signature:
     ```javascript
-    jsMan.getElement(boolean isID, string IdOrClassName);
+    jsMan.getElement(boolean isIDTrueOrisClassFalse, string IdOrClassName);
     ```
     
     
