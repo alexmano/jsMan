@@ -1,5 +1,5 @@
 # jsMan
-Oldschoold, lightweight native JavaScript library for basic operations: DOMContentLoaded, Ajax GET &amp; POST, DOM manipulation.
+Oldschool, lightweight native JavaScript library for basic operations: DOMContentLoaded, Ajax GET &amp; POST, DOM manipulation.
 Recommendation is to include the jsMan.min.js script before the end of the <body> tag.
 
 **Usage**
